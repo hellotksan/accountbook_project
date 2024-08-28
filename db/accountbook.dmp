@@ -1,0 +1,54 @@
+-- MySQL dump 10.13  Distrib 8.0.33, for Win64 (x86_64)
+--
+-- Host: localhost    Database: accountbook
+-- ------------------------------------------------------
+-- Server version	8.0.33
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `accountbooks`
+--
+
+DROP TABLE IF EXISTS `accountbooks`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `accountbooks` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `date` date NOT NULL,
+  `type` varchar(100) NOT NULL,
+  `breakdown` varchar(100) NOT NULL,
+  `price` int NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `accountbooks`
+--
+
+LOCK TABLES `accountbooks` WRITE;
+/*!40000 ALTER TABLE `accountbooks` DISABLE KEYS */;
+INSERT INTO `accountbooks` VALUES (1,'2024-08-01','収入','給料',250000),(2,'2024-08-02','支出','食費',3000),(3,'2024-08-03','支出','交通費',1000),(4,'2024-08-04','収入','副業',20000),(5,'2024-08-05','支出','娯楽',5000),(6,'2024-08-06','支出','家賃',60000),(7,'2024-08-07','収入','ボーナス',50000),(8,'2024-08-08','支出','光熱費',10000),(9,'2024-08-09','支出','雑費',2000),(10,'2024-08-10','収入','給料',250000),(11,'2024-08-11','支出','食費',4000),(12,'2024-08-12','支出','交通費',1500),(13,'2024-08-13','支出','衣類',8000),(14,'2024-08-14','収入','副業',15000),(15,'2024-08-15','支出','医療費',7000),(16,'2024-08-16','収入','給料',250000),(17,'2024-08-17','支出','娯楽',4000),(18,'2024-08-18','支出','家賃',60000),(19,'2024-08-19','収入','ボーナス',30000),(20,'2024-08-20','支出','光熱費',12000),(21,'2024-08-21','収入','給料',250000),(22,'2024-08-22','支出','雑費',3000),(23,'2024-08-23','支出','交通費',2000),(24,'2024-08-24','収入','副業',10000),(25,'2024-08-25','支出','食費',5000),(26,'2024-08-26','支出','医療費',5000),(27,'2024-08-27','収入','給料',250000),(28,'2024-08-28','支出','光熱費',8000),(29,'2024-08-29','支出','雑費',2000),(30,'2024-08-30','収入','副業',5000),(31,'2024-08-31','支出','交通費',2500);
+/*!40000 ALTER TABLE `accountbooks` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2024-08-28  8:54:28
